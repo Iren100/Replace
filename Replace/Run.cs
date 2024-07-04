@@ -22,7 +22,7 @@
             return Action(chisl, x, y, rep1, rep2);
         }
 
-        public string[] Action(int[] chisl, int x, int y, string rep1, string rep2)
+        private string[] Action(int[] chisl, int x, int y, string rep1, string rep2)
         {
             var arr = new String[chisl.Length];
 
