@@ -12,11 +12,11 @@
             this.run = run;
         }
 
-        public override string[] Action2()
+        public override string[] ActionConverter()
         {
-            var s1 = run.Action2();
+            var s1 = run.ActionConverter();
 
-            var s2 = base.Action2();
+            var s2 = base.ActionConverter();
 
             int c = 0;
 

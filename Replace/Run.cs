@@ -17,7 +17,7 @@
             this.rep2 = rep2;
         }
 
-        public virtual string[] Action2()
+        public virtual string[] ActionConverter()
         {
             return Action(chisl, x, y, rep1, rep2);
         }

@@ -8,9 +8,9 @@
 
         public Run47new(int[] chisl, IRun run) : base(chisl, run) { }
 
-        public override string[] Action2()
+        public override string[] ActionConverter()
         {
-            var s1 = base.Action2();
+            var s1 = base.ActionConverter();
 
             string[] s2 = new string[s1.Length];
 
