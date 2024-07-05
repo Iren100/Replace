@@ -2,24 +2,24 @@
 {
     public abstract class Run : IRun
     {
-        private int[] chisl { get; set; }
-        private int x { get; set; }
-        private int y { get; set; }
-        private string rep1 { get; set; }
-        private string rep2 { get; set; }
+        private int[] _chisl;
+        private int _x;
+        private int _y;
+        private string _rep1;
+        private string _rep2;
 
         protected Run(int[] chisl, int x, int y, string rep1, string rep2)
         {
-            this.chisl = chisl;
-            this.x = x;
-            this.y = y;
-            this.rep1 = rep1;
-            this.rep2 = rep2;
+            _chisl = chisl;
+            _x = x;
+            _y = y;
+            _rep1 = rep1;
+            _rep2 = rep2;
         }
 
         public virtual string[] ActionConverter()
         {
-            return Action(chisl, x, y, rep1, rep2);
+            return Action(_chisl, _x, _y, _rep1, _rep2);
         }
 
         private string[] Action(int[] chisl, int x, int y, string rep1, string rep2)

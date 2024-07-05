@@ -23,4 +23,19 @@ r = new Run47new(mas2, run35new).ActionConverter();
 
 Console.WriteLine(string.Join(",", r));
 
+Console.WriteLine();
+
+Creator cr = new ConcreteCreator1(mas2);
+Product pr = cr.FactoryMethod();
+
+//factory
+Console.WriteLine(string.Join(",", pr.Znach));
+
+cr = new ConcreteCreator2(mas2);
+pr = cr.FactoryMethod();
+
+Console.WriteLine(string.Join(",", pr.Znach));
+
+Console.ReadLine();
+
 
